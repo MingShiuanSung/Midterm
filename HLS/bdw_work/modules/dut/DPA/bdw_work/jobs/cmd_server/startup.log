@@ -1,0 +1,610 @@
+ Starting Stratus DPOpt (Linux)
+  Time: April 17, 2022. 22:23:39
+  Host: ws37
+  User: u107061139
+  Args: --dofile /usr/cadtool/cadence/STRATUS/cur/share/stratus/tcl/bdw_cmd_shell.tcl --locallogfile /dev/null -x bdw_server_start
+
+               Stratus DpOpt
+               =============
+              Version: 2019.1.01 
+
+  Copyright (c) 2014-2019 Cadence Design Systems.  All rights reserved worldwide.
+  
+  Warning: This computer program is protected by copyright law and 
+  international treaties.  Unauthorized reproduction, modification, 
+  or distribution of this program, or any portion of it, may result 
+  in severe civil and criminal penalties.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+  
+  Info: Script "/usr/cadtool/cadence/STRATUS/cur/share/stratus/tcl/bdw_cmd_shell.tcl" run successfully
+
+##########################################################################
+# Starting in server mode with port 41988
+#   client pid = 22657
+##########################################################################
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+WARNING: No library loaded, loading generic library. (CMDSHELL-13)
+WARNING: No directories in variable lib_path  (CMDSHELL-10)
+INFO: Reading LBF file '/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/libs/generic.lbf' and building datastructures (LBFPARSE-1)
+INFO: Reading LBF file '/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/libs/gencount.lbf' and building datastructures (LBFPARSE-1)
+INFO: Constructing composite cells (CMDSHELL-4)
+INFO: Library load complete (CMDSHELL-5)
+INFO: Instantiating implementation module "dut_Add2i1u3_4" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_4.sdl(2,3): INFO: Running flattening on "dut_Add2i1u3_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Add2i1u3_4" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1u3_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1u3_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1u3_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Add2i1u3_4 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Add2i1u3_4.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Add2i1u3_4" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_4.sdl(2,3): INFO: Running flattening on "dut_Add2i1u3_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Add2i1u3_4" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1u3_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1u3_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1u3_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Add2i1u3_4 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Add2i1u3_4.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Lti8s32_4" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_4.sdl(2,3): INFO: Running flattening on "dut_Lti8s32_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Lti8s32_4" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s32_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s32_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s32_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Lti8s32_4 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Lti8s32_4.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Lti8s32_4" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_4.sdl(2,3): INFO: Running flattening on "dut_Lti8s32_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Lti8s32_4" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s32_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s32_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s32_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Lti8s32_4 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Lti8s32_4.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Lti8s5_4" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_4.sdl(2,3): INFO: Running flattening on "dut_Lti8s5_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Lti8s5_4" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s5_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s5_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s5_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Lti8s5_4 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Lti8s5_4.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Lti8s5_4" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_4.sdl(2,3): INFO: Running flattening on "dut_Lti8s5_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Lti8s5_4" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s5_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s5_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s5_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Lti8s5_4 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Lti8s5_4.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Lti7s5_4" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_4.sdl(2,3): INFO: Running flattening on "dut_Lti7s5_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Lti7s5_4" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti7s5_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti7s5_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti7s5_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Lti7s5_4 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Lti7s5_4.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Lti7s5_4" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_4.sdl(2,3): INFO: Running flattening on "dut_Lti7s5_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Lti7s5_4" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti7s5_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti7s5_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti7s5_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Lti7s5_4 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Lti7s5_4.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Add2i1s32_4" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_4.sdl(2,3): INFO: Running flattening on "dut_Add2i1s32_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Add2i1s32_4" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1s32_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1s32_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1s32_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Add2i1s32_4 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Add2i1s32_4.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Add2i1s32_4" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_4.sdl(2,3): INFO: Running flattening on "dut_Add2i1s32_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Add2i1s32_4" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1s32_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1s32_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1s32_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Add2i1s32_4 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Add2i1s32_4.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Add2i1u3_1" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_1.sdl(2,3): INFO: Running flattening on "dut_Add2i1u3_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Add2i1u3_1" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1u3_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1u3_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1u3_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Add2i1u3_1 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Add2i1u3_1.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Add2i1u3_1" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_1.sdl(2,3): INFO: Running flattening on "dut_Add2i1u3_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Add2i1u3_1" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1u3_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1u3_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1u3_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1u3_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Add2i1u3_1 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Add2i1u3_1.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Lti8s32_1" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_1.sdl(2,3): INFO: Running flattening on "dut_Lti8s32_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Lti8s32_1" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s32_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s32_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s32_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Lti8s32_1 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Lti8s32_1.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Lti8s32_1" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_1.sdl(2,3): INFO: Running flattening on "dut_Lti8s32_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Lti8s32_1" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s32_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s32_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s32_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s32_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Lti8s32_1 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Lti8s32_1.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Lti8s5_1" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_1.sdl(2,3): INFO: Running flattening on "dut_Lti8s5_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Lti8s5_1" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s5_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s5_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s5_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Lti8s5_1 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Lti8s5_1.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Lti8s5_1" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_1.sdl(2,3): INFO: Running flattening on "dut_Lti8s5_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Lti8s5_1" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s5_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s5_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti8s5_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti8s5_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Lti8s5_1 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Lti8s5_1.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Lti7s5_1" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_1.sdl(2,3): INFO: Running flattening on "dut_Lti7s5_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Lti7s5_1" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti7s5_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti7s5_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti7s5_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Lti7s5_1 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Lti7s5_1.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Lti7s5_1" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_1.sdl(2,3): INFO: Running flattening on "dut_Lti7s5_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Lti7s5_1" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti7s5_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti7s5_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Lti7s5_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Lti7s5_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Lti7s5_1 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Lti7s5_1.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Add2i1s32_1" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_1.sdl(2,3): INFO: Running flattening on "dut_Add2i1s32_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Add2i1s32_1" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1s32_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1s32_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1s32_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Add2i1s32_1 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Add2i1s32_1.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "dut_Add2i1s32_1" (CMDSHELL-8)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_1.sdl(2,3): INFO: Running flattening on "dut_Add2i1s32_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "dut_Add2i1s32_1" is now selected. (CMDSHELL-12)
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1s32_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1s32_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/dut_Add2i1s32_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "dut_Add2i1s32_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model dut_Add2i1s32_1 for output to /home/u107/u107061139/EE6470/midterm/bdw_work/modules/dut/DPA/v_rtl/dut_Add2i1s32_1.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.

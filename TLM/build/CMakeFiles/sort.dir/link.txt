@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -Wall -pedantic -D CLOCK_PERIOD=1.0  -rdynamic CMakeFiles/sort.dir/Initiator.cpp.o CMakeFiles/sort.dir/Sort.cpp.o CMakeFiles/sort.dir/Testbench.cpp.o CMakeFiles/sort.dir/main.cpp.o CMakeFiles/sort.dir/tlm_log.cpp.o  -o sort  -Wl,-rpath,/opt/systemc/lib /opt/systemc/lib/libsystemc.so.2.3.3 -pthread 

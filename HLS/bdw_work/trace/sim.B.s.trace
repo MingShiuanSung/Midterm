@@ -1,0 +1,29 @@
+
+        SystemC 2.3.1-Accellera --- Feb 14 2019 12:08:38
+        Copyright (c) 1996-2014 by all Contributors,
+        ALL RIGHTS RESERVED
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.12-s100
+
+Info: (I703) tracing timescale unit set: 1 ps (bdw_work/sims/B/systemc.vcd)
+WARNING: Hub: SystemC domain: 
+	system.TB.din: cynw_p2p_in: Potential reset polarity mismatch between the reset_signal_is() statement for the
+	SC_CTHREAD, and the reset polarity specified in the third parameter to the clk_rst() call for this metaport (which is 0). 
+Latency for sample 0 is 1
+Latency for sample 1 is 1
+Latency for sample 2 is 1
+Latency for sample 3 is 1
+Latency for sample 4 is 1
+Latency for sample 5 is 1
+Latency for sample 6 is 1
+Latency for sample 7 is 1
+Latency for sample 8 is 1
+Latency for sample 9 is 1
+Latency for sample 10 is 1
+Latency for sample 11 is 1
+Latency for sample 12 is 1
+Latency for sample 13 is 1
+Latency for sample 14 is 1
+Latency for sample 15 is 1
+system.TB Error! Source timed out!
+
+Info: /OSCI/SystemC: Simulation stopped by user.

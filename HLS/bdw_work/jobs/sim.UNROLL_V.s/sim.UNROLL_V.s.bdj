@@ -1,0 +1,12 @@
+10013
+10017
+ws37
+bdw_work/trace/sim.UNROLL_V.s.trace
+2
+0
+0
+0
+1650250280
+1650250289
+/usr/cadtool/cadence/STRATUS/cur/bin/hub_ncverilog -f bdw_work/sims/UNROLL_V/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_dut_UNROLL +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/UNROLL_V/sim_UNROLL_V.so +hubSetOption+bdr=bdw_work/sims/UNROLL_V/sim.bdr -l bdw_work/sims/UNROLL_V/bdw_sim_verilog.log
+

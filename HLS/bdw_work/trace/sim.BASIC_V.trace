@@ -1,0 +1,592 @@
+/usr/cadtool/cadence/STRATUS/cur/bin/bdw_wrapgen -project project.tcl -module dut "-Ibdw_work/wrappers   -g -DCLOCK_PERIOD=10.0  "
+/usr/cadtool/cadence/STRATUS/cur/bin/bdw_tracegen -module dut -vcd 
+make --no-print-directory -f Makefile -j1 hls_dut_BASIC
+Generating dependencies for HLS config BASIC of dut.cc
+BDW_HLS_CONFIG=BASIC BDW_CYNTH_CONFIG=BASIC \
+bdw_exec -jobproject project.tcl -job hls.dut.BASIC.s \
+/usr/cadtool/cadence/STRATUS/cur/bin/stratus_hls --logfile=stratus_hls.log -I. -Ibdw_work/wrappers -I/usr/cadtool/cadence/STRATUS/cur/share/stratus/include   --tl=/usr/cadtool/cadence/STRATUS/cur/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib --balance_expr=off --clock_period=10.000 --default_input_delay=0.100 --dpopt_auto=off --dpopt_with_enable=off --flatten_arrays=none --inline_partial_constants=off --lsb_trimming=off --message_detail=0 --method_processing=synthesize --path_delay_limit=140.000 --rtl_annotation=op,stack --sched_asap=off --unroll_loops=off --wireload=none -DBASIC=1 -DBDW_RTL_dut_BASIC=1  \
+	-d bdw_work/modules/dut/BASIC -o dut_rtl.cc \
+	--hls_module=dut --hls_config=BASIC --project=project.tcl \
+	 \
+	 \
+	 \
+	 \
+	 dut.cc
+
+stratus_hls 19.12-s100  (91710.131054)
+Copyright (c) 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+        00481: -D is set to "__x86_64__, STRATUS=1, STRATUS_HLS=1, CYNTHESIZER,
+        00481.   CYNTHHL, BASIC=1, BDW_RTL_dut_BASIC=1".
+        00481: -I is set to "., bdw_work/wrappers,
+        00481.   /usr/cadtool/cadence/STRATUS/cur/share/stratus/include,
+        00481.   /usr/cadtool/cadence/STRATUS/cur/share/stratus/include,
+        00481.   /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/systemc/2.3.1/include".
+        00481: -U is not set.
+        00481: --abort_level is set to "FATAL".
+        00481: --allow_pipeline_loop_expansion is set to "on".
+        00481: --attrib_value is not set.
+        00481: --balance_expr is set to "off".
+        00481: --cachelib is set to "on".
+        00481: --cachelib_dir is not set.
+        00481: --cap_table_file is not set.
+        00481: --clock_gating_module is not set.
+        00481: --clock_period is set to "10.000".
+        00481: --comm_subexp_elim is set to "off".
+        00481: --constrain_multiport_mem_distance is set to "on".
+        00481: --cycle_slack is set to "0.000".
+        00481: --default_input_delay is set to "0.100".
+        00481: --default_preserve_io is set to "off".
+        00481: --default_protocol is set to "off".
+        00481: --default_stable_input_delay is not set.
+        00481: --dont_ungroup_name is not set.
+        00481: --dont_ungroup_type is set to "none".
+        00481: --dpopt_auto is set to "off".
+        00481: --dpopt_effort is set to "normal".
+        00481: --dpopt_with_enable is set to "off".
+        00481: --eco_baseline is not set.
+        00481: --eco_sharing is set to "off".
+        00481: --fail_level is set to "ERROR".
+        00481: --fixed_reset is set to "off".
+        00481: --flatten_arrays is set to "none".
+        00481: --fpga_dsp_latency is set to "2".
+        00481: --fpga_dsp_min_widths is set to "12,12".
+        00481: --fpga_part is not set.
+        00481: --fpga_tool is not set.
+        00481: --fpga_use_dsp is set to "off".
+        00481: --global_state_encoding is set to "binary".
+        00481: --help is not set.
+        00481: --hls_config is set to "BASIC".
+        00481: --hls_module is set to "dut".
+        00481: --ignore_cells is not set.
+        00481: --ignore_scan_cells is set to "off".
+        00481: --inline_partial_constants is set to "off".
+        00481: --interconnect_mode is set to "wireload".
+        00481: --lef_library is not set.
+        00481: --logfile is set to "bdw_work/modules/dut/BASIC/stratus_hls.log".
+        00481: --lsb_trimming is set to "off".
+        00481: --message_detail is set to "0".
+        00481: --message_level is not set.
+        00481: --message_suppress is not set.
+        00481: --method_processing is set to "synthesize".
+        00481: --mux_pushing is set to "on".
+        00481: --number_of_routing_layers is not set.
+        00481: --output is set to "dut_rtl.cc".
+        00481: --output_dir is set to "bdw_work/modules/dut/BASIC".
+        00481: --output_style_fp_rtl_same_arch is set to "off".
+        00481: --output_style_fsm_increment is set to "on".
+        00481: --output_style_mem is set to "array".
+        00481: --output_style_merge_cases is set to "on".
+        00481: --output_style_mux is set to "impl_case".
+        00481: --output_style_parts is set to "rtl".
+        00481: --output_style_pipelined_parts is set to "generic".
+        00481: --output_style_reset_all is set to "off".
+        00481: --output_style_reset_all_async is set to "off".
+        00481: --output_style_reset_all_sync is set to "off".
+        00481: --output_style_separate_behaviors is set to "off".
+        00481: --output_style_separate_memories is set to "off".
+        00481: --output_style_starc is set to "S2.2.2.2,S2.2.3.1,S2.3.1.1".
+        00481: --output_style_structure_only is set to "off".
+        00481: --output_style_two_part_fsm is set to "on".
+        00481: --output_style_ungroup_parts is set to "on".
+        00481: --parts_effort is set to "high".
+        00481: --parts_lib is not set.
+        00481: --parts_lib_path is not set.
+        00481: --path_delay_limit is set to "140".
+        00481: --path_delay_limit_unshare_regs is set to "on".
+        00481: --pipelined_parts is set to "on".
+        00481: --port_conns is set to "named".
+        00481: --power is set to "off".
+        00481: --power_clock_gating is set to "off".
+        00481: --power_fsm is set to "off".
+        00481: --power_memory is set to "off".
+        00481: --prints is set to "on".
+        00481: --project is set to "project.tcl".
+        00481: --qrc_tech_file is not set.
+        00481: --register_fsm_mux_selects is set to "on".
+        00481: --relax_timing is set to "off".
+        00481: --rtl_annotation is set to "op,stack".
+        00481: --run_through is set to "rtl".
+        00481: --scale_of_cap_per_unit_len is not set.
+        00481: --scale_of_res_per_unit_len is not set.
+        00481: --sched_analysis is set to "on_failure".
+        00481: --sched_asap is set to "off".
+        00481: --sched_effort is set to "medium".
+        00481: --sharing_effort_parts is set to "high".
+        00481: --sharing_effort_regs is set to "high".
+        00481: --shift_trimming is set to "standard".
+        00481: --simple_index_mapping is set to "off".
+        00481: --split_add is set to "0".
+        00481: --split_multiply is set to "0".
+        00481: --src_file is set to "dut.cc".
+        00481: --summary_level is set to "WARNING".
+        00481: --switch_optimizer is set to "on".
+        00481: --tech_lib is set to "/usr/cadtool/cadence/STRATUS/cur/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib".
+        00481: --timing_aggression is set to "off".
+        00481: --undef_func is set to "warn".
+        00481: --unroll_loops is set to "off".
+        00481: --verilog_dialect is set to "1995".
+        00481: --wait_for_license is set to "off".
+        00481: --wireload is set to "none".
+   NOTE 03065: Control flow zipping is enabled
+   NOTE 01483: Using cmdesigner 2019.1.01.8041 (03251817).
+   NOTE 01727: Using Genus 17.11-s014_1.
+
+        01425: Loading design and library files:
+        01279:   All time values are in "ns".
+   NOTE 01277:   Using a clock period of 10.000ns.
+
+WARNING 00634: at input_t.h line 114
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 117
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 124
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 131
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 138
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 145
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 152
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 159
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 166
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+        01824:     Physical estimation options:
+        01825:       interconnect_mode .......... wireload
+        01825:       techlib ....................
+        01825.         /usr/cadtool/cadence/STRATUS/cur/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib
+        01825:       wireload ................... none
+        00967:   Processing library
+        02788:       Using cached results for cyn_reg_estimate
+        01472:       Register Metrics:
+        01440:          Register Type          Area              Delay (ns)
+        01440.         --------------   -------------------   ---------------
+        01440.         EN SS SC AS AC   Total   Comb    Seq     Prop    Setup
+        01440.         -- -- -- -- --   -----  -----  -----   ------   ------
+        01438:          0  0  0  0  0     5.5    0.0    5.5    0.114    0.066
+        01438:          0  0  0  0  1     6.2    0.0    6.2    0.131    0.067
+        01438:          0  0  0  1  0     6.5    0.0    6.5    0.127    0.067
+        01438:          0  0  0  1  1    12.0    0.7   11.3    0.141    0.098
+        01438:          0  0  1  0  0     6.8    1.4    5.5    0.114    0.123
+        01438:          0  0  1  0  1     7.5    1.4    6.2    0.131    0.125
+        01438:          0  0  1  1  0     7.9    1.0    6.8    0.161    0.089
+        01438:          0  0  1  1  1    12.3    1.0   11.3    0.141    0.106
+        01438:          0  1  0  0  0     6.8    1.4    5.5    0.114    0.104
+        01438:          0  1  0  0  1     7.5    1.4    6.2    0.131    0.105
+        01438:          0  1  0  1  0     7.9    1.0    6.8    0.161    0.100
+        01438:          0  1  0  1  1    12.3    1.0   11.3    0.141    0.115
+        01438:          0  1  1  0  0     7.5    2.1    5.5    0.114    0.147
+        01438:          0  1  1  0  1     8.2    2.1    6.2    0.131    0.149
+        01438:          0  1  1  1  0     8.6    1.7    6.8    0.161    0.111
+        01438:          0  1  1  1  1    13.0    1.7   11.3    0.141    0.127
+        01438:          1  0  0  0  0     7.5    0.0    7.5    0.112    0.122
+        01438:          1  0  0  0  1     8.2    0.0    8.2    0.134    0.110
+        01438:          1  0  0  1  0     8.9    2.4    6.5    0.129    0.143
+        01438:          1  0  0  1  1    13.7    2.4   11.3    0.143    0.133
+        01438:          1  0  1  0  0     8.9    1.4    7.5    0.112    0.177
+        01438:          1  0  1  0  1     9.6    1.4    8.2    0.134    0.169
+        01438:          1  0  1  1  0     9.9    1.7    8.2    0.153    0.131
+        01438:          1  0  1  1  1    14.4    1.7   12.7    0.149    0.164
+        01438:          1  1  0  0  0     8.9    1.4    7.5    0.112    0.158
+        01438:          1  1  0  0  1     9.6    1.4    8.2    0.134    0.150
+        01438:          1  1  0  1  0     9.9    1.7    8.2    0.153    0.145
+        01438:          1  1  0  1  1    14.4    1.7   12.7    0.149    0.175
+        01438:          1  1  1  0  0     9.6    2.1    7.5    0.112    0.202
+        01438:          1  1  1  0  1    10.3    2.1    8.2    0.134    0.192
+        01438:          1  1  1  1  0    10.6    2.4    8.2    0.153    0.156
+        01438:          1  1  1  1  1    15.0    2.4   12.7    0.149    0.187
+   NOTE 01037:     Characterizing multiplexors up to 1 bits by 33 inputs.
+        02788:       Using cached results for cyn_mux_estimate
+
+        00148: Normalization and optimization:
+        02923:   Dissolving function boundaries.
+        02924:   Dissolved 305 function calls.
+        01351:   at dut.cc line 28
+        01351.     Preprocessing thread dut::thread1
+        00116:   at dut.cc line 28
+        00116.     Optimizing thread dut::thread1
+        00306:     Optimize: pass 1..
+        00306:     Optimize: pass 2..
+        00306:     Optimize: pass 3.
+        00306:     Optimize: pass 4..
+        00306:     Optimize: pass 5.
+        00306:     Optimize: pass 6.
+        00306:     Optimize: pass 7.
+        02831:       at dut.cc line 65
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00306:     Optimize: pass 8..
+        00306:     Optimize: pass 9.
+        00306:     Optimize: pass 10..
+        00306:     Optimize: pass 11.
+        00306:     Optimize: pass 12.
+        00306:     Optimize: pass 13.
+        00259:       at dut.cc line 42
+        00259.         Array arr, 8 words x 32 bits (256 total bits), has NOT
+        00259.         been flattened because the --flatten_array level does
+        00259.         not allow flattening of arrays with variable writes.
+   NOTE 00260:       at dut.cc line 71 (in arr())
+   NOTE 00260.           called from line 42
+   NOTE 00260.         This is the first of 2 variable writes to arr.
+        00261:       at dut.cc line 65 (in arr())
+        00261.           called from line 42
+        00261.         This is the first of 4 variable reads from arr.
+        00289:       at dut.cc line 61
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at dut.cc line 54
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at dut.cc line 38
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        02835:       at dut.cc line 61
+        02835.         Not converting control branching to datapath elements
+        02835.         because the wait statements are not balanced.
+               ....................................................................................................
+               ....................................................................
+        01352:   at dut.cc line 28
+        01352.     Postprocessing thread dut::thread1
+
+        00182: Initial resource mapping:
+   NOTE 01037:     Characterizing multiplexors up to 256 bits by 64 inputs.
+        02788:       Using cached results for cyn_mux_estimate_0
+        00968:   Matching resources
+   NOTE 00852:     at dut.cc line 65
+   NOTE 00852.       Created memory wrapper dut_RAM_8X32_1
+        02791:         Area =     0.00  Latency = 1  Setup =    0.066ns
+        02791.                                       Delay =    0.114ns
+        02788:       Using cached results for dut_Not_1U_1U_4
+        02790:         Area =     0.68  Latency = 0  Delay =    0.029ns
+        02788:       Using cached results for dut_Xor_1Ux1U_1U_4
+        02790:         Area =     2.74  Latency = 0  Delay =    0.107ns
+        02788:       Using cached results for dut_Or_1Ux1U_1U_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.070ns
+        02788:       Using cached results for dut_And_1Ux1U_1U_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.071ns
+        02788:       Using cached results for dut_N_Muxb_1_2_1_4
+        02790:         Area =     2.39  Latency = 0  Delay =    0.090ns
+        02788:       Using cached results for dut_gen_busy_r_4
+        02790:         Area =     4.10  Latency = 0  Delay =    0.165ns
+        02788:       Using cached results for dut_LessThan_5Sx4S_1U_4
+        02790:         Area =    17.10  Latency = 0  Delay =    0.352ns
+        02788:       Using cached results for dut_LessThan_32Sx5S_1U_4
+        02790:         Area =   121.07  Latency = 0  Delay =    0.652ns
+        02788:       Using cached results for dut_Add_32Sx2S_32S_4
+        02790:         Area =   269.15  Latency = 0  Delay =    1.586ns
+        02788:       Using cached results for dut_N_Mux_3_2_0_4
+        02790:         Area =     7.18  Latency = 0  Delay =    0.090ns
+        02788:       Using cached results for dut_LessThan_33Sx33S_1U_4
+        02790:         Area =   145.01  Latency = 0  Delay =    0.812ns
+        02788:       Using cached results for dut_LessThan_32Ux32U_1U_4
+        02790:         Area =   139.54  Latency = 0  Delay =    0.603ns
+        02788:       Using cached results for dut_LessThan_5Sx5S_1U_4
+        02790:         Area =    17.10  Latency = 0  Delay =    0.352ns
+        02788:       Using cached results for dut_Add_3Ux2S_5S_4
+        02790:         Area =    18.13  Latency = 0  Delay =    0.388ns
+        02788:       Using cached results for dut_Not_1U_1U_1
+        02790:         Area =     4.10  Latency = 0  Delay =    0.019ns
+        02788:       Using cached results for dut_Xor_1Ux1U_1U_1
+        02790:         Area =     4.45  Latency = 0  Delay =    0.071ns
+        02788:       Using cached results for dut_Or_1Ux1U_1U_1
+        02790:         Area =     4.45  Latency = 0  Delay =    0.051ns
+        02788:       Using cached results for dut_And_1Ux1U_1U_1
+        02790:         Area =     8.89  Latency = 0  Delay =    0.046ns
+        02788:       Using cached results for dut_N_Muxb_1_2_1_1
+        02790:         Area =    11.75  Latency = 0  Delay =    0.060ns
+        02788:       Using cached results for dut_gen_busy_r_1
+        02790:         Area =    17.78  Latency = 0  Delay =    0.102ns
+        02788:       Using cached results for dut_LessThan_5Sx4S_1U_1
+        02790:         Area =    29.75  Latency = 0  Delay =    0.249ns
+        02788:       Using cached results for dut_LessThan_32Sx5S_1U_1
+        02790:         Area =   176.13  Latency = 0  Delay =    0.359ns
+        02788:       Using cached results for dut_Add_32Sx2S_32S_1
+        02790:         Area =   538.62  Latency = 0  Delay =    0.393ns
+        02788:       Using cached results for dut_N_Mux_3_2_0_1
+        02790:         Area =    35.24  Latency = 0  Delay =    0.060ns
+        02788:       Using cached results for dut_LessThan_33Sx33S_1U_1
+        02790:         Area =   202.12  Latency = 0  Delay =    0.355ns
+        02788:       Using cached results for dut_LessThan_32Ux32U_1U_1
+        02790:         Area =   189.13  Latency = 0  Delay =    0.306ns
+        02788:       Using cached results for dut_LessThan_5Sx5S_1U_1
+        02790:         Area =    29.75  Latency = 0  Delay =    0.249ns
+        02788:       Using cached results for dut_Add_3Ux2S_5S_1
+        02790:         Area =    44.24  Latency = 0  Delay =    0.194ns
+
+        00969: Scheduling:
+   NOTE 01437:   at dut.cc line 28
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+               .....................
+        01171:   Scheduling thread dut::thread1
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 63
+        03257:     Sharable op count: 28
+        01170:     Unsharable op count: 35
+        01166:     Estimated intrinsic mux area: 51
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1..
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                        Resource Quantity
+        01220:            dut_Add_32Sx2S_32S_4        1
+        01220:       dut_LessThan_32Ux32U_1U_1        1
+        01220:       dut_LessThan_33Sx33S_1U_1        1
+        01220:               dut_N_Mux_3_2_0_1        1
+        01220:                  dut_RAM_8X32_1        1
+               ...
+
+        02918: RTL Generation & Optimization:
+        02917:   Preparing thread dut::thread1 for final RTL output
+        01006:     States: 28
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ........................................................................
+               .                                                                      .
+        00802: . Allocation Report for thread "thread1":                              .
+        00805: .                                         Area/Instance                .
+        00805: .                                   -------------------------    Total .
+        00805: .                  Resource  Count     Seq(#FF)    Comb    BB     Area .
+        00805: . -------------------------  -----  -----------  ------  ----  ------- .
+        00807: .      dut_Add_32Sx2S_32S_4      1                269.2          269.2 .
+        00807: . dut_LessThan_33Sx33S_1U_4      1                145.0          145.0 .
+        00807: . dut_LessThan_32Ux32U_1U_4      1                139.5          139.5 .
+        00807: .        dut_Add_3Ux2S_5S_4      2                 18.1           36.3 .
+        00807: .   dut_LessThan_5Sx5S_1U_4      1                 17.1           17.1 .
+        00807: .   dut_LessThan_5Sx4S_1U_4      1                 17.1           17.1 .
+        00807: .         dut_N_Mux_3_2_0_4      1                  7.2            7.2 .
+        00807: .            dut_RAM_8X32_1      1                          ?        ? .
+        00810: .            implicit muxes                                     1095.1 .
+        00808: .                 registers     20                                     .
+        00809: .             register bits    543     5.5(1)       0.0         2971.3 .
+        00811: . -------------------------------------------------------------------- .
+        00812: .                Total Area         2970.3(543)  1725.4   0.0   4697.7 .
+               .                                                                      .
+               ........................................................................
+
+
+        00813:     Array bindings:
+        00814:       Array arr, 8 words x 32 bits (256 total bits), has been
+        00814.         mapped to a dut_RAM_8X32_1 memory having 8 words x 32
+        00814.         bits (256 total bits).
+        01677:     Building RTL structures, pass 3
+        00971:   Cleaning up
+        00144:     Global optimizations............................
+        00144:     Global optimizations............................
+        02788:       Using cached results for dut_Add_5U_6_4
+        02790:         Area =     0.00  Latency = 0  Delay =    0.000ns
+        02788:       Using cached results for dut_DECODE_32U_5_4
+        02790:         Area =    55.06  Latency = 0  Delay =    0.183ns
+        02788:       Using cached results for dut_DECODE_16U_4_4
+        02790:         Area =    28.39  Latency = 0  Delay =    0.131ns
+        02788:       Using cached results for dut_DECODE_4U_3_4
+        02790:         Area =     5.13  Latency = 0  Delay =    0.071ns
+        02788:       Using cached results for dut_DECODE_2U_2_4
+        02790:         Area =     0.68  Latency = 0  Delay =    0.029ns
+
+               +----------------------------------------------------------------------+
+               |                                                                      |
+        00803: | Allocation Report for all threads:                                   |
+        00805: |                                         Area/Instance                |
+        00805: |                                   -------------------------    Total |
+        00805: |                  Resource  Count     Seq(#FF)    Comb    BB     Area |
+        00805: | -------------------------  -----  -----------  ------  ----  ------- |
+        00807: |             mux_32bx10i0c      1                346.0          346.0 |
+        00807: |      dut_Add_32Sx2S_32S_4      1                269.2          269.2 |
+        00807: | dut_LessThan_33Sx33S_1U_4      1                145.0          145.0 |
+        00807: | dut_LessThan_32Ux32U_1U_4      1                139.5          139.5 |
+        00807: |              mux_32bx3i0c      1                101.7          101.7 |
+        00807: |              mux_32bx2i0c      1                 99.3           99.3 |
+        00807: |             mux_4bx13i13c      1                 48.3           48.3 |
+        00807: |               mux_8bx5i1c      1                 43.2           43.2 |
+        00807: |              mux_3bx12i8c      1                 37.1           37.1 |
+        00807: |             mux_4bx10i10c      1                 37.1           37.1 |
+        00807: |        dut_Add_3Ux2S_5S_4      2                 18.1           36.3 |
+        00807: |               mux_5bx5i4c      1                 23.8           23.8 |
+        00807: |          dut_gen_busy_r_1      1                 17.8           17.8 |
+        00807: |   dut_LessThan_5Sx4S_1U_4      1                 17.1           17.1 |
+        00807: |   dut_LessThan_5Sx5S_1U_4      1                 17.1           17.1 |
+        00807: |               mux_1bx2i2c      5                  2.3           11.6 |
+        00807: |               mux_3bx3i1c      1                 10.0           10.0 |
+        00807: |        dut_And_1Ux1U_1U_1      1                  8.9            8.9 |
+        00807: |               mux_3bx2i1c      1                  8.1            8.1 |
+        00807: |               mux_2bx4i4c      1                  7.3            7.3 |
+        00807: |         dut_N_Mux_3_2_0_4      1                  7.2            7.2 |
+        00807: |        dut_Xor_1Ux1U_1U_1      1                  4.4            4.4 |
+        00807: |           dut_Not_1U_1U_1      1                  4.1            4.1 |
+        00807: |               mux_1bx3i1c      1                  3.8            3.8 |
+        00807: |        dut_N_Muxb_1_2_1_4      1                  2.4            2.4 |
+        00807: |         dut_Or_1Ux1U_1U_4      1                  1.4            1.4 |
+        00807: |            dut_RAM_8X32_1      1                          ?        ? |
+        00808: |                 registers     29                                     |
+        00809: |             register bits    563     7.5(1)       0.1         4260.0 |
+        02604: |           estimated cntrl      1                211.2          211.2 |
+        00811: | -------------------------------------------------------------------- |
+        00812: |                Total Area         4229.9(563)  1689.0   0.0   5918.8 |
+               |                                                                      |
+               +----------------------------------------------------------------------+
+
+
+        00813:     Array bindings:
+        00814:       Array arr, 8 words x 32 bits (256 total bits), has been
+        00814.         mapped to a dut_RAM_8X32_1 memory having 8 words x 32
+        00814.         bits (256 total bits).
+
+        00195: Writing RTL files:
+        01766:   bdw_work/modules/dut/BASIC/c_parts/dut_RAM_8X32_1.h
+        01767:   bdw_work/modules/dut/BASIC/c_parts/dut_RAM_8X32_1.cc
+        01766:   bdw_work/modules/dut/BASIC/dut_rtl.h
+        01767:   bdw_work/modules/dut/BASIC/dut_rtl.cc
+        01768:   bdw_work/modules/dut/BASIC/v_rtl/dut_RAM_8X32_1.v
+        01768:   bdw_work/modules/dut/BASIC/dut_rtl.v
+
+        01445: Summary of messages of severity WARNING or greater:
+        01193:   SEVERITY MSGID CNT
+        01198:    WARNING 00634   9
+
+stratus_hls succeeded with 0 errors and 9 warnings.
+
+make[3]: `bdw_work/modules/dut/BASIC/dut_rtl.v' is up to date.
+/usr/cadtool/cadence/STRATUS/cur/bin/bdw_makegen project.tcl -scsim builtin -lib bdw_work/modules/dut/BASIC -o bdw_work/modules/dut/BASIC/Makefile -module dut -cynthconfig BASIC  
+Generating dependencies for dut.cc 
+/usr/cadtool/cadence/STRATUS/cur/bin/bdw_shell /usr/cadtool/cadence/STRATUS/cur/share/stratus/tcl/bdw_siminfo.tcl project.tcl BASIC_V
+make[3]: Nothing to be done for `bdw_work/wrappers/dut_wrap.h'.
+make[3]: `bdw_work/modules/dut/BASIC/dut_rtl.v' is up to date.
+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/gcc/4.8/bin/g++  -Ibdw_work/modules/dut/BASIC -I./ -I./ -Ibdw_work/wrappers  -DBDW_CC_SPEC=1 -Ibdw_work/modules/dut/BASIC/c_parts -DBASIC=1 -DBDW_RTL_dut_BASIC=1    -c -g -DCLOCK_PERIOD=10.0    -fPIC  -I/usr/cadtool/cadence/STRATUS/cur/share/stratus/include -I/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/dut/BASIC/dut.o  bdw_work/wrappers/dut_wrap.cc
+/usr/cadtool/cadence/STRATUS/cur/bin/bdw_wrapgen -project project.tcl -simconfig BASIC_V -top top
+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/gcc/4.8/bin/g++ -shared -Wl,-Bsymbolic  \
+        -Wl,-rpath,/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit \
+        -Wl,-rpath,/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/lib/64bit \
+        -Wl,-rpath,/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/systemc/2.3.1/lib-linux64 \
+	-o bdw_work/sims/BASIC_V/sim_BASIC_V.so  \
+	bdw_work/modules/dut/BASIC/dut.o bdw_work/objs/main.o bdw_work/objs/tb.o \
+	 \
+	 \
+        bdw_work/libesc/libesc.a \
+	 \
+	-L /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/lib/64bit -L /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit  -L /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/systemc/2.3.1/lib-linux64 -lscv -lsystemc  -lbdw_st   \
+	-lm -lcrypt -ldl \
+	2>&1 | perl /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/hub_link_filter.pl
+make --no-print-directory -f Makefile incisive
+/usr/cadtool/cadence/STRATUS/cur/bin/bdw_wrapgen -project project.tcl -simconfig BASIC_V -top top
+
+BDW_SIM_CONFIG_DIR=bdw_work/sims/BASIC_V \
+bdw_exec -jobproject project.tcl -job sim.BASIC_V.s \
+/usr/cadtool/cadence/STRATUS/cur/bin/hub_ncverilog \
+	-f bdw_work/sims/BASIC_V/siminfo \
++libext+.v   +define+ioConfig +define+BDW_RTL_dut_BASIC \
+	+nowarn+LIBNOU  +hubSetOption+libdef=bdw_work/sims/BASIC_V/sim_BASIC_V.so +hubSetOption+bdr=bdw_work/sims/BASIC_V/sim.bdr \
+	-l bdw_work/sims/BASIC_V/bdw_sim_verilog.log \
+	2>&1 | tee bdw_work/sims/BASIC_V/bdw_sim.log
+Operating system Centos 7,
+ GCC 7.3.0,
+ and Cadence NC/IUS 15.20
+are a supported combination.
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+Recompiling... reason: file './bdw_work/modules/dut/BASIC/dut_rtl.v' is newer than expected.
+	expected: Sun Apr 17 21:30:59 2022
+	actual:   Mon Apr 18 10:40:56 2022
+file: bdw_work/modules/dut/BASIC/v_rtl/dut_RAM_8X32_1.v
+ncvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+*** Registering Hub PLI1.0 Interface***
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 4       4
+		Registers:             170     170
+		Scalar wires:           19       -
+		Vectored wires:         16       -
+		Always blocks:          47      47
+		Initial blocks:          7       7
+		Cont. assignments:      12      17
+		Pseudo assignments:     16      16
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+*** Registering Hub PLI1.0 Interface***
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> run
+
+        SystemC 2.3.1-Accellera --- Feb 14 2019 12:08:38
+        Copyright (c) 1996-2014 by all Contributors,
+        ALL RIGHTS RESERVED
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.12-s100
+
+Info: (I804) /IEEE_Std_1666/deprecated: deprecated constructor: sc_time(uint64,bool)
+WARNING: Hub: SystemC domain: 
+	system.TB.din: cynw_p2p_in: Potential reset polarity mismatch between the reset_signal_is() statement for the
+	SC_CTHREAD, and the reset polarity specified in the third parameter to the clk_rst() call for this metaport (which is 0). 
+Latency for sample 0 is 101
+Latency for sample 1 is 101
+Latency for sample 2 is 101
+Latency for sample 3 is 101
+Latency for sample 4 is 101
+Latency for sample 5 is 101
+Latency for sample 6 is 101
+Latency for sample 7 is 101
+Latency for sample 8 is 101
+Latency for sample 9 is 101
+Latency for sample 10 is 101
+Latency for sample 11 is 101
+Latency for sample 12 is 101
+Latency for sample 13 is 101
+Latency for sample 14 is 101
+Latency for sample 15 is 101
+system.TB Error! Source timed out!
+Simulation stopped via $stop(1) at time 25340100 PS + 0
+./bdw_work/sims/top_BASIC_V.v:70 		#100 $stop;
+ncsim> quit
+BDW_SIM_CONFIG_DIR=bdw_work/sims/BASIC_V make cmp_result 2>&1 | tee -a bdw_work/sims/BASIC_V/bdw_sim.log
+****************************************
+Mon Apr 18 10:41:15 CST 2022
+Performing Simulation Results Comparison
+for BASIC_V Simulation...
+  BASIC_V: SIMULATION PASSED
+****************************************

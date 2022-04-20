@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<tool_log>
+	<message>
+		<code_num>3065</code_num>
+		<severity>NOTE</severity>
+		<message_text>Control flow zipping is enabled</message_text>
+		<phase>elab</phase>
+		<order>1</order>
+	</message>
+	<message>
+		<code_num>1483</code_num>
+		<severity>NOTE</severity>
+		<message_text>Using cmdesigner 2019.1.01.8041 (03251817).</message_text>
+		<phase>elab</phase>
+		<order>2</order>
+	</message>
+	<message>
+		<code_num>1727</code_num>
+		<severity>NOTE</severity>
+		<message_text>Using Genus 17.11-s014_1.</message_text>
+		<phase>elab</phase>
+		<order>3</order>
+	</message>
+	<time_units>ns</time_units>
+	<message>
+		<code_num>1277</code_num>
+		<severity>NOTE</severity>
+		<message_text>Using a clock period of 10.000ns.</message_text>
+		<phase>elab</phase>
+		<order>4</order>
+	</message>
+	<cycle_time>10.0000</cycle_time>
+	<cycle_slack>0.0000</cycle_slack>
+	<message>
+		<code_num>90040</code_num>
+		<severity>ERROR</severity>
+		<message_text> at /usr/cadtool/cadence/STRATUS/cur/share/stratus/include/hls_enums.h line 207 col 3
+expected an identifier</message_text>
+		<source_path>/usr/cadtool/cadence/STRATUS/cur/share/stratus/include/hls_enums.h</source_path>
+		<source_line>207</source_line>
+		<phase>elab</phase>
+		<order>1</order>
+	</message>
+	<message>
+		<code_num>90000</code_num>
+		<severity>NOTE</severity>
+		<message_text>    ALL                   = 0x1000,
+</message_text>
+		<phase>elab</phase>
+		<order>5</order>
+	</message>
+	<message>
+		<code_num>90000</code_num>
+		<severity>NOTE</severity>
+		<message_text>    ^
+</message_text>
+		<phase>elab</phase>
+		<order>6</order>
+	</message>
+	<message>
+		<code_num>90047</code_num>
+		<severity>WARNING</severity>
+		<message_text> at /usr/cadtool/cadence/STRATUS/cur/share/stratus/include/cyn_enums.h line 62 col 11
+incompatible redefinition of macro &quot;ALL&quot;</message_text>
+		<source_path>/usr/cadtool/cadence/STRATUS/cur/share/stratus/include/cyn_enums.h</source_path>
+		<source_line>62</source_line>
+		<phase>elab</phase>
+		<order>1</order>
+	</message>
+	<message>
+		<code_num>90000</code_num>
+		<severity>NOTE</severity>
+		<message_text>  #  define ALL
+</message_text>
+		<phase>elab</phase>
+		<order>7</order>
+	</message>
+	<message>
+		<code_num>90000</code_num>
+		<severity>NOTE</severity>
+		<message_text>            ^
+</message_text>
+		<phase>elab</phase>
+		<order>8</order>
+	</message>
+	<message>
+		<code_num>90035</code_num>
+		<severity>FATAL</severity>
+		<message_text> at /usr/cadtool/cadence/STRATUS/cur/share/stratus/include/cyn_enums.h line 63 col 4
+#error directive: &quot;ALL&quot; is reserved by Stratus. It may not be #defined by the user.</message_text>
+		<source_path>/usr/cadtool/cadence/STRATUS/cur/share/stratus/include/cyn_enums.h</source_path>
+		<source_line>63</source_line>
+		<phase>elab</phase>
+		<order>1</order>
+	</message>
+	<message_counts>
+		<message_count>
+			<code_num>90035</code_num>
+			<count>1</count>
+		</message_count>
+		<message_count>
+			<code_num>90040</code_num>
+			<count>1</count>
+		</message_count>
+		<message_count>
+			<code_num>90047</code_num>
+			<count>1</count>
+		</message_count>
+		<message_count>
+			<code_num>1277</code_num>
+			<count>1</count>
+		</message_count>
+		<message_count>
+			<code_num>1483</code_num>
+			<count>1</count>
+		</message_count>
+		<message_count>
+			<code_num>1727</code_num>
+			<count>1</count>
+		</message_count>
+		<message_count>
+			<code_num>3065</code_num>
+			<count>1</count>
+		</message_count>
+		<message_count>
+			<code_num>90000</code_num>
+			<count>4</count>
+		</message_count>
+		<message_count>
+			<code_num>481</code_num>
+			<count>108</count>
+		</message_count>
+		<message_count>
+			<code_num>1279</code_num>
+			<count>1</count>
+		</message_count>
+		<message_count>
+			<code_num>1425</code_num>
+			<count>1</count>
+		</message_count>
+	</message_counts>
+	<end_time>Mon Apr 18 07:09:30 2022</end_time>
+	<timers>
+		<phase>
+			<name>front_end</name>
+			<real_time>-1</real_time>
+			<cpu_time>-1</cpu_time>
+		</phase>
+		<phase>
+			<name>normalization</name>
+			<real_time>-1</real_time>
+			<cpu_time>-1</cpu_time>
+		</phase>
+		<phase>
+			<name>part_characterization</name>
+			<real_time>-1</real_time>
+			<cpu_time>-1</cpu_time>
+		</phase>
+		<phase>
+			<name>pattern_matching</name>
+			<real_time>-1</real_time>
+			<cpu_time>-1</cpu_time>
+		</phase>
+		<phase>
+			<name>scheduling</name>
+			<real_time>-1</real_time>
+			<cpu_time>-1</cpu_time>
+		</phase>
+		<phase>
+			<name>allocation</name>
+			<real_time>-1</real_time>
+			<cpu_time>-1</cpu_time>
+		</phase>
+		<phase>
+			<name>pre_allocation</name>
+			<real_time>-1</real_time>
+			<cpu_time>-1</cpu_time>
+		</phase>
+		<phase>
+			<name>post_allocation</name>
+			<real_time>-1</real_time>
+			<cpu_time>-1</cpu_time>
+		</phase>
+		<phase>
+			<name>cleanup</name>
+			<real_time>-1</real_time>
+			<cpu_time>-1</cpu_time>
+		</phase>
+		<phase>
+			<name>emit</name>
+			<real_time>-1</real_time>
+			<cpu_time>-1</cpu_time>
+		</phase>
+		<phase>
+			<name>cynth</name>
+			<real_time>1</real_time>
+			<cpu_time>0</cpu_time>
+		</phase>
+		<phase>
+			<name>total</name>
+			<real_time>1</real_time>
+			<cpu_time>-1</cpu_time>
+		</phase>
+	</timers>
+	<footprint>378872</footprint>
+	<subprocess_footprint>0</subprocess_footprint>
+	<phase_summary>
+		<phase_complete>elab</phase_complete>
+		<summary>Synthesis complete: 2 errors, 1 warnings</summary>
+	</phase_summary>
+	<exit_status>1</exit_status>
+</tool_log>

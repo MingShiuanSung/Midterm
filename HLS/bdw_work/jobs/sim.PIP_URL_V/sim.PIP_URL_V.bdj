@@ -1,0 +1,12 @@
+17054
+17057
+ws37
+bdw_work/trace/sim.PIP_URL_V.trace
+2
+0
+0
+0
+1650238588
+1650238652
+make --no-print-directory -f Makefile CWBExec=1 sim_PIP_URL_V
+

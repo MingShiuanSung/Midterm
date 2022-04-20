@@ -1,0 +1,12 @@
+23593
+23597
+ws37
+bdw_work/trace/sim.DPA_V.s.trace
+2
+0
+0
+0
+1650205468
+1650205470
+/usr/cadtool/cadence/STRATUS/cur/bin/hub_ncverilog -f bdw_work/sims/DPA_V/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_dut_DPA +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/DPA_V/sim_DPA_V.so +hubSetOption+bdr=bdw_work/sims/DPA_V/sim.bdr -l bdw_work/sims/DPA_V/bdw_sim_verilog.log
+

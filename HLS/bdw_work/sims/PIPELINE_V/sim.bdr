@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<tool_log>
+	<tool_kind>LogicSimulator</tool_kind>
+	<tool_name>NC Verilog</tool_name>
+	<hostname>ws37</hostname>
+	<uname>Linux 3.10.0-1160.36.2.el7.x86_64 x86_64</uname>
+	<cwd>/home/u107/u107061139/EE6470/midterm</cwd>
+	<user>u107061139</user>
+	<gen_time>Sun Apr 17 22:12:23 2022</gen_time>
+	<module_inst>
+		<module_name>dut</module_name>
+		<inst_path>system.DUT</inst_path>
+		<representation>RTL_V</representation>
+	</module_inst>
+	<end_time>Sun Apr 17 22:12:23 2022</end_time>
+	<passed>1</passed>
+</tool_log>

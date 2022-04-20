@@ -1,0 +1,12 @@
+18556
+18560
+ws37
+bdw_work/trace/sim.PIP_URL_V.s.trace
+2
+0
+0
+0
+1650238648
+1650238651
+/usr/cadtool/cadence/STRATUS/cur/bin/hub_ncverilog -f bdw_work/sims/PIP_URL_V/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_dut_PIP_URL +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/PIP_URL_V/sim_PIP_URL_V.so +hubSetOption+bdr=bdw_work/sims/PIP_URL_V/sim.bdr -l bdw_work/sims/PIP_URL_V/bdw_sim_verilog.log
+

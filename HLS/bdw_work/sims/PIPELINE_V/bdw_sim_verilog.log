@@ -1,0 +1,41 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Apr 17, 2022 at 22:12:22 CST
+irun
+	+nc64bit
+	+incdir+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib
+	+incdir+bdw_work/wrappers
+	+access+rw
+	+loadpli1=/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
+	+ncinput+bdw_work/sims/PIPELINE_V/ncverilog.do
+	+nclibdirname+bdw_work/sims/PIPELINE_V
+	-f bdw_work/sims/PIPELINE_V/siminfo
+		bdw_work/sims/top_PIPELINE_V.v
+		bdw_work/wrappers/dut_cosim.v
+		bdw_work/modules/dut/PIPELINE/dut_rtl.v
+		bdw_work/modules/dut/PIPELINE/v_rtl/dut_RAM_8X32_1.v
+	+libext+.v
+	+define+ioConfig
+	+define+BDW_RTL_dut_PIPELINE
+	+nowarn+LIBNOU
+	+hubSetOption+libdef=bdw_work/sims/PIPELINE_V/sim_PIPELINE_V.so
+	+hubSetOption+bdr=bdw_work/sims/PIPELINE_V/sim.bdr
+	-l bdw_work/sims/PIPELINE_V/bdw_sim_verilog.log
+
+   User defined plus("+") options:
+	+hubSetOption+libdef=bdw_work/sims/PIPELINE_V/sim_PIPELINE_V.so
+	+hubSetOption+bdr=bdw_work/sims/PIPELINE_V/sim.bdr
+
+Loading snapshot worklib.top:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+*** Registering Hub PLI1.0 Interface***
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> run
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.12-s100
+WARNING: Hub: SystemC domain: 
+	system.TB.din: cynw_p2p_in: Potential reset polarity mismatch between the reset_signal_is() statement for the
+	SC_CTHREAD, and the reset polarity specified in the third parameter to the clk_rst() call for this metaport (which is 0). 
+Simulation stopped via $stop(1) at time 25340100 PS + 0
+./bdw_work/sims/top_PIPELINE_V.v:70 		#100 $stop;
+ncsim> quit
+TOOL:	irun(64)	15.20-s084: Exiting on Apr 17, 2022 at 22:12:23 CST  (total: 00:00:01)

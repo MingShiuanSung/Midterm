@@ -1,0 +1,68 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Apr 18, 2022 at 10:41:12 CST
+irun
+	+nc64bit
+	+incdir+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib
+	+incdir+bdw_work/wrappers
+	+access+rw
+	+loadpli1=/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
+	+ncinput+bdw_work/sims/BASIC_V/ncverilog.do
+	+nclibdirname+bdw_work/sims/BASIC_V
+	-f bdw_work/sims/BASIC_V/siminfo
+		bdw_work/sims/top_BASIC_V.v
+		bdw_work/wrappers/dut_cosim.v
+		bdw_work/modules/dut/BASIC/dut_rtl.v
+		bdw_work/modules/dut/BASIC/v_rtl/dut_RAM_8X32_1.v
+	+libext+.v
+	+define+ioConfig
+	+define+BDW_RTL_dut_BASIC
+	+nowarn+LIBNOU
+	+hubSetOption+libdef=bdw_work/sims/BASIC_V/sim_BASIC_V.so
+	+hubSetOption+bdr=bdw_work/sims/BASIC_V/sim.bdr
+	-l bdw_work/sims/BASIC_V/bdw_sim_verilog.log
+
+   User defined plus("+") options:
+	+hubSetOption+libdef=bdw_work/sims/BASIC_V/sim_BASIC_V.so
+	+hubSetOption+bdr=bdw_work/sims/BASIC_V/sim.bdr
+
+Recompiling... reason: file './bdw_work/modules/dut/BASIC/dut_rtl.v' is newer than expected.
+	expected: Sun Apr 17 21:30:59 2022
+	actual:   Mon Apr 18 10:40:56 2022
+file: bdw_work/modules/dut/BASIC/v_rtl/dut_RAM_8X32_1.v
+ncvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+*** Registering Hub PLI1.0 Interface***
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 4       4
+		Registers:             170     170
+		Scalar wires:           19       -
+		Vectored wires:         16       -
+		Always blocks:          47      47
+		Initial blocks:          7       7
+		Cont. assignments:      12      17
+		Pseudo assignments:     16      16
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+*** Registering Hub PLI1.0 Interface***
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> run
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.12-s100
+WARNING: Hub: SystemC domain: 
+	system.TB.din: cynw_p2p_in: Potential reset polarity mismatch between the reset_signal_is() statement for the
+	SC_CTHREAD, and the reset polarity specified in the third parameter to the clk_rst() call for this metaport (which is 0). 
+Simulation stopped via $stop(1) at time 25340100 PS + 0
+./bdw_work/sims/top_BASIC_V.v:70 		#100 $stop;
+ncsim> quit
+TOOL:	irun(64)	15.20-s084: Exiting on Apr 18, 2022 at 10:41:14 CST  (total: 00:00:02)

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<tool_log>
+	<phase>
+		<name>setup</name>
+		<path>bdr/setup.phase.bdr</path>
+	</phase>
+	<phase>
+		<name>elab</name>
+		<path>bdr/elab.phase.bdr</path>
+	</phase>
+	<pid>3047</pid>
+</tool_log>

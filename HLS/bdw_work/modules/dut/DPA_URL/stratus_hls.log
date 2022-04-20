@@ -1,0 +1,828 @@
+Start at Mon Apr 18 08:24:14 2022
+
+
+stratus_hls 19.12-s100  (91710.131054)
+Copyright (c) 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+        00481: -D is set to "__x86_64__, STRATUS=1, STRATUS_HLS=1, CYNTHESIZER,
+        00481.   CYNTHHL, DPA_URL=1, BDW_RTL_dut_DPA_URL=1, UNROLL".
+        00481: -I is set to "., bdw_work/wrappers,
+        00481.   /usr/cadtool/cadence/STRATUS/cur/share/stratus/include,
+        00481.   /usr/cadtool/cadence/STRATUS/cur/share/stratus/include,
+        00481.   /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/systemc/2.3.1/include".
+        00481: -U is not set.
+        00481: --abort_level is set to "FATAL".
+        00481: --allow_pipeline_loop_expansion is set to "on".
+        00481: --attrib_value is not set.
+        00481: --balance_expr is set to "off".
+        00481: --cachelib is set to "on".
+        00481: --cachelib_dir is not set.
+        00481: --cap_table_file is not set.
+        00481: --clock_gating_module is not set.
+        00481: --clock_period is set to "10.000".
+        00481: --comm_subexp_elim is set to "off".
+        00481: --constrain_multiport_mem_distance is set to "on".
+        00481: --cycle_slack is set to "0.000".
+        00481: --default_input_delay is set to "0.100".
+        00481: --default_preserve_io is set to "off".
+        00481: --default_protocol is set to "off".
+        00481: --default_stable_input_delay is not set.
+        00481: --dont_ungroup_name is not set.
+        00481: --dont_ungroup_type is set to "none".
+        00481: --dpopt_auto is set to "op,expr".
+        00481: --dpopt_effort is set to "normal".
+        00481: --dpopt_with_enable is set to "off".
+        00481: --eco_baseline is not set.
+        00481: --eco_sharing is set to "off".
+        00481: --fail_level is set to "ERROR".
+        00481: --fixed_reset is set to "off".
+        00481: --flatten_arrays is set to "none".
+        00481: --fpga_dsp_latency is set to "2".
+        00481: --fpga_dsp_min_widths is set to "12,12".
+        00481: --fpga_part is not set.
+        00481: --fpga_tool is not set.
+        00481: --fpga_use_dsp is set to "off".
+        00481: --global_state_encoding is set to "binary".
+        00481: --help is not set.
+        00481: --hls_config is set to "DPA_URL".
+        00481: --hls_module is set to "dut".
+        00481: --ignore_cells is not set.
+        00481: --ignore_scan_cells is set to "off".
+        00481: --inline_partial_constants is set to "off".
+        00481: --interconnect_mode is set to "wireload".
+        00481: --lef_library is not set.
+        00481: --logfile is set to "bdw_work/modules/dut/DPA_URL/stratus_hls.log".
+        00481: --lsb_trimming is set to "off".
+        00481: --message_detail is set to "0".
+        00481: --message_level is not set.
+        00481: --message_suppress is not set.
+        00481: --method_processing is set to "synthesize".
+        00481: --mux_pushing is set to "on".
+        00481: --number_of_routing_layers is not set.
+        00481: --output is set to "dut_rtl.cc".
+        00481: --output_dir is set to "bdw_work/modules/dut/DPA_URL".
+        00481: --output_style_fp_rtl_same_arch is set to "off".
+        00481: --output_style_fsm_increment is set to "on".
+        00481: --output_style_mem is set to "array".
+        00481: --output_style_merge_cases is set to "on".
+        00481: --output_style_mux is set to "impl_case".
+        00481: --output_style_parts is set to "rtl".
+        00481: --output_style_pipelined_parts is set to "generic".
+        00481: --output_style_reset_all is set to "off".
+        00481: --output_style_reset_all_async is set to "off".
+        00481: --output_style_reset_all_sync is set to "off".
+        00481: --output_style_separate_behaviors is set to "off".
+        00481: --output_style_separate_memories is set to "off".
+        00481: --output_style_starc is set to "S2.2.2.2,S2.2.3.1,S2.3.1.1".
+        00481: --output_style_structure_only is set to "off".
+        00481: --output_style_two_part_fsm is set to "on".
+        00481: --output_style_ungroup_parts is set to "on".
+        00481: --parts_effort is set to "high".
+        00481: --parts_lib is not set.
+        00481: --parts_lib_path is not set.
+        00481: --path_delay_limit is set to "140".
+        00481: --path_delay_limit_unshare_regs is set to "on".
+        00481: --pipelined_parts is set to "on".
+        00481: --port_conns is set to "named".
+        00481: --power is set to "off".
+        00481: --power_clock_gating is set to "off".
+        00481: --power_fsm is set to "off".
+        00481: --power_memory is set to "off".
+        00481: --prints is set to "on".
+        00481: --project is set to "project.tcl".
+        00481: --qrc_tech_file is not set.
+        00481: --register_fsm_mux_selects is set to "on".
+        00481: --relax_timing is set to "off".
+        00481: --rtl_annotation is set to "op,stack".
+        00481: --run_through is set to "rtl".
+        00481: --scale_of_cap_per_unit_len is not set.
+        00481: --scale_of_res_per_unit_len is not set.
+        00481: --sched_analysis is set to "on_failure".
+        00481: --sched_asap is set to "off".
+        00481: --sched_effort is set to "medium".
+        00481: --sharing_effort_parts is set to "high".
+        00481: --sharing_effort_regs is set to "high".
+        00481: --shift_trimming is set to "standard".
+        00481: --simple_index_mapping is set to "off".
+        00481: --split_add is set to "0".
+        00481: --split_multiply is set to "0".
+        00481: --src_file is set to "dut.cc".
+        00481: --summary_level is set to "WARNING".
+        00481: --switch_optimizer is set to "on".
+        00481: --tech_lib is set to "/usr/cadtool/cadence/STRATUS/cur/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib".
+        00481: --timing_aggression is set to "off".
+        00481: --undef_func is set to "warn".
+        00481: --unroll_loops is set to "off".
+        00481: --verilog_dialect is set to "1995".
+        00481: --wait_for_license is set to "off".
+        00481: --wireload is set to "none".
+   NOTE 03065: Control flow zipping is enabled
+   NOTE 01483: Using cmdesigner 2019.1.01.8041 (03251817).
+   NOTE 01727: Using Genus 17.11-s014_1.
+
+        01425: Loading design and library files:
+        01279:   All time values are in "ns".
+   NOTE 01277:   Using a clock period of 10.000ns.
+
+WARNING 00634: at input_t.h line 114
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 117
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 124
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 131
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 138
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 145
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 152
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 159
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+WARNING 00634: at input_t.h line 166
+WARNING 00634.   <reference to struct std::basic_istream<char,
+WARNING 00634.   std::char_traits<char>> ()> can't combine with <pointer to
+WARNING 00634.   struct std::basic_ios<char, std::char_traits<char>> ()>
+
+        01824:     Physical estimation options:
+        01825:       interconnect_mode .......... wireload
+        01825:       techlib ....................
+        01825.         /usr/cadtool/cadence/STRATUS/cur/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib
+        01825:       wireload ................... none
+        00967:   Processing library
+        02788:       Using cached results for cyn_reg_estimate
+        01472:       Register Metrics:
+        01440:          Register Type          Area              Delay (ns)
+        01440.         --------------   -------------------   ---------------
+        01440.         EN SS SC AS AC   Total   Comb    Seq     Prop    Setup
+        01440.         -- -- -- -- --   -----  -----  -----   ------   ------
+        01438:          0  0  0  0  0     5.5    0.0    5.5    0.114    0.066
+        01438:          0  0  0  0  1     6.2    0.0    6.2    0.131    0.067
+        01438:          0  0  0  1  0     6.5    0.0    6.5    0.127    0.067
+        01438:          0  0  0  1  1    12.0    0.7   11.3    0.141    0.098
+        01438:          0  0  1  0  0     6.8    1.4    5.5    0.114    0.123
+        01438:          0  0  1  0  1     7.5    1.4    6.2    0.131    0.125
+        01438:          0  0  1  1  0     7.9    1.0    6.8    0.161    0.089
+        01438:          0  0  1  1  1    12.3    1.0   11.3    0.141    0.106
+        01438:          0  1  0  0  0     6.8    1.4    5.5    0.114    0.104
+        01438:          0  1  0  0  1     7.5    1.4    6.2    0.131    0.105
+        01438:          0  1  0  1  0     7.9    1.0    6.8    0.161    0.100
+        01438:          0  1  0  1  1    12.3    1.0   11.3    0.141    0.115
+        01438:          0  1  1  0  0     7.5    2.1    5.5    0.114    0.147
+        01438:          0  1  1  0  1     8.2    2.1    6.2    0.131    0.149
+        01438:          0  1  1  1  0     8.6    1.7    6.8    0.161    0.111
+        01438:          0  1  1  1  1    13.0    1.7   11.3    0.141    0.127
+        01438:          1  0  0  0  0     7.5    0.0    7.5    0.112    0.122
+        01438:          1  0  0  0  1     8.2    0.0    8.2    0.134    0.110
+        01438:          1  0  0  1  0     8.9    2.4    6.5    0.129    0.143
+        01438:          1  0  0  1  1    13.7    2.4   11.3    0.143    0.133
+        01438:          1  0  1  0  0     8.9    1.4    7.5    0.112    0.177
+        01438:          1  0  1  0  1     9.6    1.4    8.2    0.134    0.169
+        01438:          1  0  1  1  0     9.9    1.7    8.2    0.153    0.131
+        01438:          1  0  1  1  1    14.4    1.7   12.7    0.149    0.164
+        01438:          1  1  0  0  0     8.9    1.4    7.5    0.112    0.158
+        01438:          1  1  0  0  1     9.6    1.4    8.2    0.134    0.150
+        01438:          1  1  0  1  0     9.9    1.7    8.2    0.153    0.145
+        01438:          1  1  0  1  1    14.4    1.7   12.7    0.149    0.175
+        01438:          1  1  1  0  0     9.6    2.1    7.5    0.112    0.202
+        01438:          1  1  1  0  1    10.3    2.1    8.2    0.134    0.192
+        01438:          1  1  1  1  0    10.6    2.4    8.2    0.153    0.156
+        01438:          1  1  1  1  1    15.0    2.4   12.7    0.149    0.187
+   NOTE 01037:     Characterizing multiplexors up to 1 bits by 33 inputs.
+        02788:       Using cached results for cyn_mux_estimate
+
+        00148: Normalization and optimization:
+        02923:   Dissolving function boundaries.
+        02924:   Dissolved 307 function calls.
+        01351:   at dut.cc line 28
+        01351.     Preprocessing thread dut::thread1
+        00116:   at dut.cc line 28
+        00116.     Optimizing thread dut::thread1
+        00306:     Optimize: pass 1..
+        00306:     Optimize: pass 2..
+        00306:     Optimize: pass 3.
+        00306:     Optimize: pass 4..
+        00306:     Optimize: pass 5.
+        00288:     at dut.cc line 54
+        00288.       Unrolling loop 7 times because the
+        00288.       HLS_UNROLL_LOOP(ALL,...) directive was used.
+        00306:     Optimize: pass 6...
+        00306:     Optimize: pass 7..
+        00306:     Optimize: pass 8.
+        00306:     Optimize: pass 9..
+        00306:     Optimize: pass 10.
+        00288:     at dut.cc line 61
+        00288.       Unrolling loop 7 times because the
+        00288.       HLS_UNROLL_LOOP(ALL,...) directive was used.
+        00306:     Optimize: pass 11.
+   HINT 00333:     at dut.cc line 65
+   HINT 00333.       This design may benefit from propagation of partial
+   HINT 00333.       constants. Try using --inline_partial_constants=on
+               ..
+        00306:     Optimize: pass 12..
+        00306:     Optimize: pass 13.
+        00306:     Optimize: pass 14..
+        00306:     Optimize: pass 15.
+        00306:     Optimize: pass 16.
+        00306:     Optimize: pass 17.
+        02831:       at dut.cc line 65
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00306:     Optimize: pass 18..
+        00306:     Optimize: pass 19.
+        00306:     Optimize: pass 20...
+        00306:     Optimize: pass 21.
+        00306:     Optimize: pass 22.
+        00306:     Optimize: pass 23.
+        00259:       at dut.cc line 42
+        00259.         Array arr, 8 words x 32 bits (256 total bits), has NOT
+        00259.         been flattened because the --flatten_array level does
+        00259.         not allow flattening of arrays with variable writes.
+   NOTE 00260:       at dut.cc line 72 (in arr())
+   NOTE 00260.           called from line 42 (in [0]())
+   NOTE 00260.           called from line 54
+   NOTE 00260.         This is the first of 7 variable writes to arr.
+        00261:       at dut.cc line 65 (in arr())
+        00261.           called from line 42 (in [0]())
+        00261.           called from line 54 (in [1]())
+        00261.           called from line 61
+        00261.         This is the first of 28 variable reads from arr.
+        00289:       at dut.cc line 38
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+               ....................................................................................................
+               ....................................................................
+        01352:   at dut.cc line 28
+        01352.     Postprocessing thread dut::thread1
+   NOTE 00486: Creating custom parts for this design
+   NOTE 00487: Created 18 parts
+   NOTE 00488:     dpopt_auto: Suggesting 8 parts
+
+        00182: Initial resource mapping:
+   NOTE 01037:     Characterizing multiplexors up to 256 bits by 64 inputs.
+        02788:       Using cached results for cyn_mux_estimate_0
+        00968:   Matching resources
+   NOTE 00852:     at dut.cc line 65
+   NOTE 00852.       Created memory wrapper dut_RAM_8X32_1
+        02791:         Area =     0.00  Latency = 1  Setup =    0.066ns
+        02791.                                       Delay =    0.114ns
+        02788:       Using cached results for dut_Not_1U_1U_4
+        02790:         Area =     0.68  Latency = 0  Delay =    0.029ns
+        02788:       Using cached results for dut_Xor_1Ux1U_1U_4
+        02790:         Area =     2.74  Latency = 0  Delay =    0.107ns
+        02788:       Using cached results for dut_Or_1Ux1U_1U_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.070ns
+        02788:       Using cached results for dut_And_1Ux1U_1U_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.071ns
+        02788:       Using cached results for dut_gen_busy_r_4
+        02790:         Area =     4.10  Latency = 0  Delay =    0.165ns
+        02788:       Using cached results for dut_N_Mux_3_2_23_4
+        02790:         Area =     4.10  Latency = 0  Delay =    0.070ns
+        02788:       Using cached results for dut_N_Mux_3_2_22_4
+        02790:         Area =     4.10  Latency = 0  Delay =    0.070ns
+        02788:       Using cached results for dut_N_Mux_3_2_21_4
+        02790:         Area =     4.10  Latency = 0  Delay =    0.070ns
+        02788:       Using cached results for dut_N_Mux_3_2_20_4
+        02790:         Area =     4.10  Latency = 0  Delay =    0.070ns
+        02788:       Using cached results for dut_N_Mux_3_2_19_4
+        02790:         Area =     4.10  Latency = 0  Delay =    0.070ns
+        02788:       Using cached results for dut_N_Mux_3_2_18_4
+        02790:         Area =     4.10  Latency = 0  Delay =    0.070ns
+        02788:       Using cached results for dut_LessThan_32Ux32U_1U_4
+        02790:         Area =   139.54  Latency = 0  Delay =    0.603ns
+        02788:       Using cached results for dut_N_Muxb_1_2_7_4
+        02790:         Area =     2.39  Latency = 0  Delay =    0.090ns
+        02723:       Synthesizing dut_GreaterThanEQ_32Ux32U_1U_4...
+
+   NOTE 03280: A specified technology library contains scan flip flops which
+   NOTE 03280.   may be used in timing estimation.
+
+   NOTE 00171: No wireload models present in technology library,
+   NOTE 00171.   /usr/cadtool/cadence/STRATUS/cur/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib.
+
+   NOTE 00198: No wire load model is being used.
+
+        02790:         Area =   141.25  Latency = 0  Delay =    0.568ns
+        02723:       Synthesizing dut_Muxn4i3u1_4...
+        02790:         Area =     0.68  Latency = 0  Delay =    0.035ns
+        02723:       Synthesizing dut_Muxn2n3u1_4...
+        02790:         Area =     0.68  Latency = 0  Delay =    0.029ns
+        02788:       Using cached results for dut_Not_1U_1U_1
+        02790:         Area =     4.10  Latency = 0  Delay =    0.019ns
+        02788:       Using cached results for dut_Xor_1Ux1U_1U_1
+        02790:         Area =     4.45  Latency = 0  Delay =    0.071ns
+        02788:       Using cached results for dut_Or_1Ux1U_1U_1
+        02790:         Area =     4.45  Latency = 0  Delay =    0.051ns
+        02788:       Using cached results for dut_And_1Ux1U_1U_1
+        02790:         Area =     8.89  Latency = 0  Delay =    0.046ns
+        02788:       Using cached results for dut_gen_busy_r_1
+        02790:         Area =    17.78  Latency = 0  Delay =    0.102ns
+        02788:       Using cached results for dut_N_Mux_3_2_23_1
+        02790:         Area =    25.86  Latency = 0  Delay =    0.050ns
+        02788:       Using cached results for dut_N_Mux_3_2_22_1
+        02790:         Area =     9.23  Latency = 0  Delay =    0.057ns
+        02788:       Using cached results for dut_N_Mux_3_2_21_1
+        02790:         Area =     9.23  Latency = 0  Delay =    0.057ns
+        02788:       Using cached results for dut_N_Mux_3_2_20_1
+        02790:         Area =     9.92  Latency = 0  Delay =    0.051ns
+        02788:       Using cached results for dut_N_Mux_3_2_19_1
+        02790:         Area =     9.23  Latency = 0  Delay =    0.057ns
+        02788:       Using cached results for dut_N_Mux_3_2_18_1
+        02790:         Area =     9.92  Latency = 0  Delay =    0.051ns
+        02788:       Using cached results for dut_LessThan_32Ux32U_1U_1
+        02790:         Area =   189.13  Latency = 0  Delay =    0.306ns
+        02788:       Using cached results for dut_N_Muxb_1_2_7_1
+        02790:         Area =    11.75  Latency = 0  Delay =    0.060ns
+        02723:       Synthesizing dut_GreaterThanEQ_32Ux32U_1U_1...
+        02790:         Area =   168.95  Latency = 0  Delay =    0.316ns
+        02723:       Synthesizing dut_Muxn4i3u1_1...
+        02790:         Area =     4.10  Latency = 0  Delay =    0.020ns
+        02723:       Synthesizing dut_Muxn2n3u1_1...
+        02790:         Area =     4.10  Latency = 0  Delay =    0.019ns
+
+        00969: Scheduling:
+   NOTE 01437:   at dut.cc line 28
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+               .....................
+        01171:   Scheduling thread dut::thread1
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 172
+        03257:     Sharable op count: 94
+        01170:     Unsharable op count: 78
+        01166:     Estimated intrinsic mux area: 293
+   NOTE 01254:     Adjusting part timing and restarting schedule.
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+        02723:       Synthesizing dut_GreaterThanEQ_32Ux32U_1U_0...
+        02790:         Area =   441.25  Latency = 0  Delay =    0.268ns
+        02723:       Synthesizing dut_N_Mux_3_2_23_0...
+        02790:         Area =    22.78  Latency = 0  Delay =    0.049ns
+        02723:       Synthesizing dut_N_Mux_3_2_22_0...
+        02790:         Area =    18.26  Latency = 0  Delay =    0.049ns
+        02723:       Synthesizing dut_N_Mux_3_2_21_0...
+        02790:         Area =    18.26  Latency = 0  Delay =    0.049ns
+        02723:       Synthesizing dut_N_Mux_3_2_20_0...
+        02790:         Area =    14.77  Latency = 0  Delay =    0.049ns
+        02723:       Synthesizing dut_N_Mux_3_2_19_0...
+        02790:         Area =    18.26  Latency = 0  Delay =    0.049ns
+        02723:       Synthesizing dut_N_Mux_3_2_18_0...
+        02790:         Area =    14.77  Latency = 0  Delay =    0.049ns
+        02723:       Synthesizing dut_LessThan_32Ux32U_1U_0...
+        02790:         Area =   305.53  Latency = 0  Delay =    0.279ns
+        02723:       Synthesizing dut_Muxn4i3u1_0...
+        02790:         Area =     8.21  Latency = 0  Delay =    0.019ns
+        02723:       Synthesizing dut_Muxn2n3u1_0...
+        02790:         Area =     4.10  Latency = 0  Delay =    0.019ns
+   NOTE 01254:     Adjusting part timing and restarting schedule.
+   NOTE 01258: Incrementing latency constraint "my_latency" to 3
+   NOTE 01258: Incrementing latency constraint "my_latency" to 4
+   NOTE 01258: Incrementing latency constraint "my_latency" to 5
+   NOTE 01258: Incrementing latency constraint "my_latency" to 6
+   NOTE 01258: Incrementing latency constraint "my_latency" to 7
+   NOTE 01258: Incrementing latency constraint "my_latency" to 8
+   NOTE 01258: Incrementing latency constraint "my_latency" to 9
+   NOTE 01258: Incrementing latency constraint "my_latency" to 10
+   NOTE 01258: Incrementing latency constraint "my_latency" to 11
+   NOTE 01258: Incrementing latency constraint "my_latency" to 12
+   NOTE 01258: Incrementing latency constraint "my_latency" to 13
+   NOTE 01258: Incrementing latency constraint "my_latency" to 14
+   NOTE 01258: Incrementing latency constraint "my_latency" to 15
+   NOTE 01258: Incrementing latency constraint "my_latency" to 16
+   NOTE 01258: Incrementing latency constraint "my_latency" to 17
+   NOTE 01258: Incrementing latency constraint "my_latency" to 18
+   NOTE 01258: Incrementing latency constraint "my_latency" to 19
+   NOTE 01258: Incrementing latency constraint "my_latency" to 20
+   NOTE 01258: Incrementing latency constraint "my_latency" to 21
+   NOTE 01258: Incrementing latency constraint "my_latency" to 22
+   NOTE 01258: Incrementing latency constraint "my_latency" to 23
+   NOTE 01258: Incrementing latency constraint "my_latency" to 24
+   NOTE 01258: Incrementing latency constraint "my_latency" to 25
+   NOTE 01258: Incrementing latency constraint "my_latency" to 26
+   NOTE 01258: Incrementing latency constraint "my_latency" to 27
+   NOTE 01258: Incrementing latency constraint "my_latency" to 28
+   NOTE 01258: Incrementing latency constraint "my_latency" to 29
+   NOTE 01258: Incrementing latency constraint "my_latency" to 30
+   NOTE 01258: Incrementing latency constraint "my_latency" to 31
+   NOTE 01258: Incrementing latency constraint "my_latency" to 32
+   NOTE 01258: Incrementing latency constraint "my_latency" to 33
+   NOTE 01258: Incrementing latency constraint "my_latency" to 34
+   NOTE 01258: Incrementing latency constraint "my_latency" to 35
+   NOTE 01258: Incrementing latency constraint "my_latency" to 36
+   NOTE 01258: Incrementing latency constraint "my_latency" to 37
+   NOTE 01258: Incrementing latency constraint "my_latency" to 38
+   NOTE 01258: Incrementing latency constraint "my_latency" to 39
+   NOTE 01258: Incrementing latency constraint "my_latency" to 40
+   NOTE 01258: Incrementing latency constraint "my_latency" to 41
+   NOTE 01258: Incrementing latency constraint "my_latency" to 42
+   NOTE 01258: Incrementing latency constraint "my_latency" to 43
+   NOTE 01258: Incrementing latency constraint "my_latency" to 44
+   NOTE 01258: Incrementing latency constraint "my_latency" to 45
+   NOTE 01258: Incrementing latency constraint "my_latency" to 46
+   NOTE 01258: Incrementing latency constraint "my_latency" to 47
+   NOTE 01258: Incrementing latency constraint "my_latency" to 48
+   NOTE 01258: Incrementing latency constraint "my_latency" to 49
+   NOTE 01258: Incrementing latency constraint "my_latency" to 50
+   NOTE 01258: Incrementing latency constraint "my_latency" to 51
+   NOTE 01258: Incrementing latency constraint "my_latency" to 52
+   NOTE 01258: Incrementing latency constraint "my_latency" to 53
+   NOTE 01258: Incrementing latency constraint "my_latency" to 54
+   NOTE 01258: Incrementing latency constraint "my_latency" to 55
+   NOTE 01258: Incrementing latency constraint "my_latency" to 56
+   NOTE 01258: Incrementing latency constraint "my_latency" to 57
+   NOTE 01258: Incrementing latency constraint "my_latency" to 58
+   NOTE 01258: Incrementing latency constraint "my_latency" to 59
+   NOTE 01258: Incrementing latency constraint "my_latency" to 60
+   NOTE 01258: Incrementing latency constraint "my_latency" to 61
+   NOTE 01258: Incrementing latency constraint "my_latency" to 62
+   NOTE 01258: Incrementing latency constraint "my_latency" to 63
+   NOTE 01258: Incrementing latency constraint "my_latency" to 64
+   NOTE 01258: Incrementing latency constraint "my_latency" to 65
+   NOTE 01258: Incrementing latency constraint "my_latency" to 66
+
+   NOTE 00009: Failed to find a valid schedule, entering failure analysis
+   NOTE 00009.   phase.
+
+        00197: #################################[ Latency Violation ]################################
+        00197:                                                                                       
+        00197: Latency constraint "my_latency" was relaxed from 2 to 66 to find a schedule           
+        00197: See User Guide section titled "Latency and Protocol Blocks Errors."                   
+        00197: The addition of the following cycle(s):                                               
+        00197: [ Cycle3   (VIOL_135) ]                                                                
+        00197: Violated this latency constraint                                                      
+        00197: Found 3 path(s) that caused violation                                                 
+        00197:                                                                                       
+        00197: Clock period          :   10.000  
+        00197: Cycle slack           :    0.000  
+        00197: --------------------------------  
+        00197: Effective clock period:   10.000  
+        00197:                                   
+        00197: **********************************[ Violator Path 1 ]*********************************
+        00197:                                                                                       
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP86   dut.cc:65,21  dut_RAM_8X32_1.ports().write() [ memory read ]   0.066  0.179  
+        00197:                                                                                     
+        00197: --------------------------------------[ Cycle ]-------------------------------------
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP86   dut.cc:65,21  dut_RAM_8X32_1.out1.read() [ memory read ]       0.114  0.114  
+        00197: DFFD                 DFF (Tsu)                                        0.127  0.241  
+        00197:                                                                                     
+        00197: --------------------------------------[ Cycle ]-------------------------------------
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP88   dut.cc:65,16  dut_LessThan_32Ux32U_1U_0.in1                    0.279  0.393  
+        00197: OP89   dut.cc:65,21  dut_RAM_8X32_1.in1.write() [ memory read ]       0.066  0.459  
+        00197:                                                                                     
+        00197: --------------------------------------[ Cycle ]-------------------------------------
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP89   dut.cc:65,21  dut_RAM_8X32_1.out1.read() [ memory read ]       0.114  0.114  
+        00197: DFFD                 DFF (Tsu)                                        0.127  0.241  
+        00197:                                                                                     
+        00197: --------------------------------------[ Cycle ]-------------------------------------
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP91   dut.cc:65,16  dut_LessThan_32Ux32U_1U_0.in1                    0.279  0.393  
+        00197: OP92   dut.cc:65,5   dut_N_Mux_3_2_18_0.ctrl1                         0.049  0.442  
+        00197: OP93   dut.cc:65,21  dut_RAM_8X32_1.in1.write() [ memory read ]       0.066  0.507  
+        00197:                                                                                     
+        00197: --------------------------------------[ Cycle ]-------------------------------------
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP93   dut.cc:65,21  dut_RAM_8X32_1.out1.read() [ memory read ]       0.114  0.114  
+        00197: DFFD                 DFF (Tsu)                                        0.127  0.241  
+        00197:                                                                                     
+        00197: --------------------------------------[ Cycle ]-------------------------------------
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP95   dut.cc:65,16  dut_LessThan_32Ux32U_1U_0.in1                    0.279  0.393  
+        00197: OP96   dut.cc:65,5   dut_N_Mux_3_2_19_0.ctrl1                         0.049  0.442  
+        00197: OP97   dut.cc:65,21  dut_RAM_8X32_1.in1.write() [ memory read ]       0.066  0.507  
+        00197:                                                                                     
+        00197: --------------------------------------[ Cycle ]-------------------------------------
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP97   dut.cc:65,21  dut_RAM_8X32_1.out1.read() [ memory read ]       0.114  0.114  
+        00197: DFFD                 DFF (Tsu)                                        0.127  0.241  
+        00197:                                                                                     
+        00197: --------------------------------------[ Cycle ]-------------------------------------
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP99   dut.cc:65,16  dut_LessThan_32Ux32U_1U_0.in1                    0.279  0.393  
+        00197: OP100  dut.cc:65,5   dut_N_Mux_3_2_20_0.ctrl1                         0.049  0.442  
+        00197: OP101  dut.cc:65,21  dut_RAM_8X32_1.in1.write() [ memory read ]       0.066  0.507  
+        00197:                                                                                     
+        00197: --------------------------------------[ Cycle ]-------------------------------------
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP101  dut.cc:65,21  dut_RAM_8X32_1.out1.read() [ memory read ]       0.114  0.114  
+        00197: DFFD                 DFF (Tsu)                                        0.127  0.241  
+        00197:                                                                                     
+        00197: --------------------------------------[ Cycle ]-------------------------------------
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP103  dut.cc:65,16  dut_LessThan_32Ux32U_1U_0.in1                    0.279  0.393  
+        00197: OP104  dut.cc:65,5   dut_N_Mux_3_2_21_0.ctrl1                         0.049  0.442  
+        00197: OP105  dut.cc:65,21  dut_RAM_8X32_1.in1.write() [ memory read ]       0.066  0.507  
+        00197:                                                                                     
+        00197: --------------------------------------[ Cycle ]-------------------------------------
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP105  dut.cc:65,21  dut_RAM_8X32_1.out1.read() [ memory read ]       0.114  0.114  
+        00197: DFFD                 DFF (Tsu)                                        0.127  0.241  
+        00197:                                                                                     
+        00197: --------------------------------------[ Cycle ]-------------------------------------
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP107  dut.cc:65,16  dut_LessThan_32Ux32U_1U_0.in1                    0.279  0.393  
+        00197: OP108  dut.cc:65,5   dut_N_Mux_3_2_22_0.ctrl1                         0.049  0.442  
+        00197: OP109  dut.cc:65,21  dut_RAM_8X32_1.in1.write() [ memory read ]       0.066  0.507  
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 1 ]------------------------------------
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP109  dut.cc:65,21  dut_RAM_8X32_1.out1.read() [ memory read ]       0.114  0.114  
+        00197: DFFD                 DFF (Tsu)                                        0.127  0.241  
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 2 ]------------------------------------
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP111  dut.cc:65,16  dut_LessThan_32Ux32U_1U_0.in1                    0.279  0.393  
+        00197: OP112  dut.cc:65,5   dut_N_Mux_3_2_23_0.ctrl1                         0.049  0.442  
+        00197: OP113  dut.cc:71,16  dut_RAM_8X32_1.in1.write() [ memory read ]       0.066  0.507  
+        00197:                                                                                     
+        00197: ----------------------------[ Cycle 3 !!! VIOLATION !!! ]---------------------------
+        00197: OP ID  Source        Resource                                         Incr   Accum  
+        00197:                                                                                     
+        00197: OP113  dut.cc:71,16  dut_RAM_8X32_1.out1.read() [ memory read ]       0.114  0.114  
+        00197: DFFD                 DFF (Tsu)                                        0.127  0.241  
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 4 ]------------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 5 ]------------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 6 ]------------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 7 ]------------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 8 ]------------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 9 ]------------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 10 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 11 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 12 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 13 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 14 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 15 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 16 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 17 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 18 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 19 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 20 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 21 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 22 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 23 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 24 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 25 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 26 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 27 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 28 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 29 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 30 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 31 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 32 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 33 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 34 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 35 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 36 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 37 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 38 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 39 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 40 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 41 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 42 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 43 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 44 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 45 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 46 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 47 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 48 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 49 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 50 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 51 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 52 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 53 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 54 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 55 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 56 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 57 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 58 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 59 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 60 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 61 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 62 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 63 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 64 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 65 ]-----------------------------------
+        00197:                                                                                     
+        00197: -------------------------------------[ Cycle 66 ]-----------------------------------
+        00197:                                                                                     
+        00197:                                                                                     
+        00197: ====================================================================================
+        00197: ================================== Call Stack Table=================================
+        00197: ====================================================================================
+        00197:                                        
+        00197: OP86 Called:                           
+        00197:           at dut.cc:65,21                      
+        00197:           called from dut.cc:42,15 (in arr())  
+        00197:           called from dut.cc:54,3 (in [0]())   
+        00197:           called from dut.cc:61,4 (in [0]())   
+        00197:                                        
+        00197: OP88 Called:                           
+        00197:           at dut.cc:65,5                      
+        00197:           called from dut.cc:54,3 (in [0]())  
+        00197:           called from dut.cc:61,4 (in [0]())  
+        00197:                                        
+        00197: OP91 Called:                           
+        00197:           at dut.cc:65,16 (in operator<())    
+        00197:           called from dut.cc:54,3 (in [0]())  
+        00197:           called from dut.cc:61,4 (in [1]())  
+        00197:                                        
+        00197: OP92 Called:                           
+        00197:           at dut.cc:65,5                      
+        00197:           called from dut.cc:54,3 (in [0]())  
+        00197:           called from dut.cc:61,4 (in [1]())  
+        00197:                                        
+        00197: OP95 Called:                           
+        00197:           at dut.cc:65,16 (in operator<())    
+        00197:           called from dut.cc:54,3 (in [0]())  
+        00197:           called from dut.cc:61,4 (in [2]())  
+        00197:                                        
+        00197: OP96 Called:                           
+        00197:           at dut.cc:65,5                      
+        00197:           called from dut.cc:54,3 (in [0]())  
+        00197:           called from dut.cc:61,4 (in [2]())  
+        00197:                                        
+        00197: OP99 Called:                           
+        00197:           at dut.cc:65,16 (in operator<())    
+        00197:           called from dut.cc:54,3 (in [0]())  
+        00197:           called from dut.cc:61,4 (in [3]())  
+        00197:                                        
+        00197: OP100 Called:                          
+        00197:           at dut.cc:65,5                      
+        00197:           called from dut.cc:54,3 (in [0]())  
+        00197:           called from dut.cc:61,4 (in [3]())  
+        00197:                                        
+        00197: OP103 Called:                          
+        00197:           at dut.cc:65,16 (in operator<())    
+        00197:           called from dut.cc:54,3 (in [0]())  
+        00197:           called from dut.cc:61,4 (in [4]())  
+        00197:                                        
+        00197: OP104 Called:                          
+        00197:           at dut.cc:65,5                      
+        00197:           called from dut.cc:54,3 (in [0]())  
+        00197:           called from dut.cc:61,4 (in [4]())  
+        00197:                                        
+        00197: OP107 Called:                          
+        00197:           at dut.cc:65,16 (in operator<())    
+        00197:           called from dut.cc:54,3 (in [0]())  
+        00197:           called from dut.cc:61,4 (in [5]())  
+        00197:                                        
+        00197: OP108 Called:                          
+        00197:           at dut.cc:65,5                      
+        00197:           called from dut.cc:54,3 (in [0]())  
+        00197:           called from dut.cc:61,4 (in [5]())  
+        00197:                                        
+        00197: OP111 Called:                          
+        00197:           at dut.cc:65,16 (in operator<())    
+        00197:           called from dut.cc:54,3 (in [0]())  
+        00197:           called from dut.cc:61,4 (in [6]())  
+        00197:                                        
+        00197: OP112 Called:                          
+        00197:           at dut.cc:65,5                      
+        00197:           called from dut.cc:54,3 (in [0]())  
+        00197:           called from dut.cc:61,4 (in [6]())  
+        00197:                                        
+        00197: ====================================================================================
+        00197: ================================= Cycle Explanation ================================
+        00197: ====================================================================================
+        00197: Cycle 1 was added because the following pipelined ops are occurring:                
+        00197:      OP ID  Resource                                     Source        
+        00197:      -----  --------                                     ------        
+        00197:      OP109  dut_RAM_8X32_1.out1.read() [ memory read ]   dut.cc:65,21  
+        00197:                                                                        
+        00197: Cycle 3 was added because the following pipelined ops are occurring:                
+        00197:      OP ID  Resource                                     Source        
+        00197:      -----  --------                                     ------        
+        00197:      OP113  dut_RAM_8X32_1.out1.read() [ memory read ]   dut.cc:71,16  
+        00197:                                                                        
+              #################################################################
+              #                                                               #
+  ERROR 01484:# Unable to produce a valid schedule, found 1 Violation(s).     #
+              #                                                               #
+              #################################################################
+               ...
+              #################################################################
+              #                                                               #
+  ERROR 01196:# Stratus has failed to schedule one or more threads. All       #
+  ERROR 01196.#   threads scheduled after the failure may or may not be       #
+  ERROR 01196.#   dependent on the failed thread.                             #
+              #                                                               #
+              #################################################################
+
+        01445: Summary of messages of severity WARNING or greater:
+        01193:   SEVERITY MSGID CNT
+        01198:      ERROR 01196   1
+        01198:      ERROR 01484   1
+        01198:    WARNING 00634   9
+
+stratus_hls failed with 2 errors and 9 warnings.
+
+End at Mon Apr 18 08:26:22 2022
+

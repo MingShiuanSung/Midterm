@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<lib_catalogue>
+	<lib_type>COMBO</lib_type>
+	<tool_log>
+		<tool_kind>BehavioralSynthesis</tool_kind>
+		<tool_name>stratus_hls</tool_name>
+		<gen_time>Mon Apr 18 07:35:05 2022</gen_time>
+		<version>19.12-s100  (91710.131054)</version>
+		<hostname>ws37</hostname>
+		<uname>Linux ws37 3.10.0-1160.36.2.el7.x86_64 #1 SMP Wed Jul 21 11:57:15 UTC 2021 x86_64</uname>
+		<user>u107061139</user>
+		<cwd>/home/u107/u107061139/EE6470/midterm</cwd>
+		<tech_lib>/usr/cadtool/cadence/STRATUS/cur/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib</tech_lib>
+		<env_var>
+			<name>STRATUS_HOME</name>
+			<value>/usr/cadtool/cadence/STRATUS/cur</value>
+		</env_var>
+		<env_var>
+			<name>BDW_CYNTH_CONFIG</name>
+			<value>PIPELINE</value>
+		</env_var>
+	</tool_log>
+	<time_units>ns</time_units>
+	<cycle_time>10.0000</cycle_time>
+	<cycle_slack>0.0000</cycle_slack>
+</lib_catalogue>

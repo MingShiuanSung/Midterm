@@ -1,0 +1,12 @@
+22569
+22572
+ws37
+bdw_work/trace/hls.dut.DPA.s.trace
+2
+0
+0
+0
+1650205417
+1650205454
+/usr/cadtool/cadence/STRATUS/cur/bin/stratus_hls --logfile=stratus_hls.log -I. -Ibdw_work/wrappers -I/usr/cadtool/cadence/STRATUS/cur/share/stratus/include --tl=/usr/cadtool/cadence/STRATUS/cur/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib --balance_expr=off --clock_period=10.000 --default_input_delay=0.100 --dpopt_auto=off --dpopt_with_enable=off --flatten_arrays=none --inline_partial_constants=off --lsb_trimming=off --message_detail=0 --method_processing=synthesize --path_delay_limit=140.000 --rtl_annotation=op,stack --sched_asap=off --unroll_loops=off --wireload=none -DDPA=1 -DBDW_RTL_dut_DPA=1 --dpopt_auto=op,expr -d bdw_work/modules/dut/DPA -o dut_rtl.cc --hls_module=dut --hls_config=DPA --project=project.tcl dut.cc
+

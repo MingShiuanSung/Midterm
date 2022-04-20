@@ -1,0 +1,12 @@
+27673
+27678
+ws37
+bdw_work/trace/sim.USE_ALL_V.s.trace
+2
+0
+0
+0
+1650241727
+1650241730
+/usr/cadtool/cadence/STRATUS/cur/bin/hub_ncverilog -f bdw_work/sims/USE_ALL_V/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_dut_USE_ALL +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/USE_ALL_V/sim_USE_ALL_V.so +hubSetOption+bdr=bdw_work/sims/USE_ALL_V/sim.bdr -l bdw_work/sims/USE_ALL_V/bdw_sim_verilog.log
+
